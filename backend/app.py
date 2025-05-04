@@ -13,8 +13,8 @@ app = Flask(__name__)
 CORS(app)
 
 # File paths
-news_file = os.getenv("NEWS_FILE_PATH", "backend/data/news.csv")
-jobs_file = os.getenv("JOBS_FILE_PATH", "backend/data/jobs.csv")
+news_file = "backend/data/news.csv"
+jobs_file = "backend/data/jobs.csv"
 news_output = "backend/data/processed_news.csv"
 jobs_output = "backend/data/processed_jobs.csv"
 
