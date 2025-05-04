@@ -1,6 +1,9 @@
 Flask==3.0.3
 Flask-CORS==5.0.1
 Flask-SQLAlchemy==3.1.1
-pandas==2.0.0
-python-terrier==0.13.0
+pyterrier==0.13.0
 gunicorn==20.1.0
+pandas==2.0.0
+numpy==1.24.2
+requests==2.28.1
+python-dotenv==0.20.0
