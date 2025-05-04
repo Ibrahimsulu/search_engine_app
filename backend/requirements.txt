@@ -1,13 +1,5 @@
-# Backend requirements (Flask)
 Flask==3.0.3
 Flask-CORS==5.0.1
 Flask-SQLAlchemy==3.1.1
 pandas==2.0.0
 python-terrier==0.13.0
-
-# Frontend requirements (Next.js)
-react==18.2.0
-react-dom==18.2.0
-next==13.1.6
-@heroicons/react==1.0.6
-tailwindcss==3.2.7
