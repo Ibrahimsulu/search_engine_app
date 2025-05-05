@@ -13,10 +13,10 @@ app = Flask(__name__)
 CORS(app)
 
 # File paths
-news_file = "backend/data/news.csv"
-jobs_file = "backend/data/jobs.csv"
-news_output = "backend/data/processed_news.csv"
-jobs_output = "backend/data/processed_jobs.csv"
+news_file = "data/news.csv"
+jobs_file = "data/jobs.csv"
+news_output = "data/processed_news.csv"
+jobs_output = "data/processed_jobs.csv"
 
 # Check if files exist
 if not os.path.exists(news_file) or not os.path.exists(jobs_file):
