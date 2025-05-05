@@ -5,6 +5,7 @@ import { SearchIcon, MicrophoneIcon } from "@heroicons/react/outline";
 import Image from "next/image";
 import { useRef, useState } from "react";
 import { useRouter } from "next/router";
+import logo from '../components/logo.jpg'; 
 
 export default function Home() {
   const router = useRouter();
@@ -38,7 +39,12 @@ export default function Home() {
   return (
     <div className="flex flex-col items-center h-screen">
       <form className="flex flex-col items-center pt-3 flex-grow w-4/5">
-        <Image src="https://i.imgur.com/IZuI2H9.gif" height={207} width={700} priority />
+        <Image
+  src={logo}
+  height={207}
+  width={700}
+  priority
+/>
         <div className="flex w-full mt-5 hover:shadow-lg focus-within:shadow-lg max-w-md rounded-full border border-gray-200 px-5 py-3 items-center sm:max-w-xl lg:max-w-2xl">
           <SearchIcon className="h-5 mr-3 text-gray-700" />
           <input ref={searchInputRef} type="text" className="flex-grow focus:outline-none" />
