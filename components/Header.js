@@ -3,6 +3,7 @@ import { useRouter } from "next/router";
 import { useRef, useState, useEffect } from "react";
 import { MicrophoneIcon, SearchIcon, XIcon } from "@heroicons/react/outline";
 import Avatar from "./Avatar";
+import logo from './logo.jpg'; //
 
 function Header() {
   const router = useRouter();
@@ -45,7 +46,7 @@ function Header() {
     <header className="sticky top-0 bg-white z-50">
       <div className="flex w-full p-6 items-center">
         <Image
-          src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_92x30dp.png"
+          src={logo}
           height={40}
           width={120}
           onClick={() => router.push("/")}
